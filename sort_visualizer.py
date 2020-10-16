@@ -13,9 +13,13 @@ class SortVisualizer:
         self.height = height
         self.arr = []
         self.visualize = False
-        self.highlightOne, self.highlightTwo = None, None
         self.speed = delay
 
+    """
+    Start the program
+        Call this function after creating an instance of the class
+        to create the window and start the program
+    """
     def start(self):
         pygame.init()
         pygame.font.init()
@@ -52,7 +56,6 @@ class SortVisualizer:
 
                 # Done visualizing
                 self.visualize = False
-                self.highlightOne, self.highlightTwo = None, None
                 self.draw_array()
 
             # Update
@@ -62,7 +65,7 @@ class SortVisualizer:
         self.quit()
 
     """
-    Quit the app
+    Quit the program
         This is a separate function in case there is a need to perform
         certain operations when quitting
     """
@@ -101,6 +104,9 @@ class SortVisualizer:
         for i in range(length):
             self.arr.append(random.randint(min, max))
 
+    """
+    Draw the current array to the screen, represented by bars
+    """     
     def draw_array(self):
         self.clear_screen()
         heightModifier = self.height / 150  # How much to multiply the number of the bar for the height by
