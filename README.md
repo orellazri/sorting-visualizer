@@ -3,6 +3,8 @@
 
 **This project is very much a work-in-progress.**
 
+![](demo.gif)
+
 # Running
 Install the required dependencies:
 
