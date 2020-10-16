@@ -1,6 +1,7 @@
 # Sorting Visualizer
-A sorting visualizer made in Python with Pygame.
-**This project is very much a work-in-progress**
+📊 Sorting visualizer made in Python with Pygame
+
+**This project is very much a work-in-progress.**
 
 # Running
 Install the required dependencies:
